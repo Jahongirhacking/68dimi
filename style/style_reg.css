@@ -1,0 +1,220 @@
+body{
+    text-decoration: none;
+    margin:auto;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 3px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow!important;
+    border-radius: 50px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(38, 38, 38)!important;
+}
+
+#copy{
+    display: none;
+}
+
+div {
+    position: relative;
+    width: 65%;
+    margin: auto;
+    padding: 70px 50px 75px;
+    margin-top: 11%;
+    text-align: center;
+    transition: 0.4s ease;
+    transition-property: transform, box-shadow;
+    border-radius: 20px;
+    font-size: 1.8em;
+}
+
+nav{
+    background-color: rgb(66, 66, 66);
+    width:100%;
+    margin: auto;
+}
+
+#level{
+    margin: auto;
+    width: fit-content;
+    display: grid;
+    color: rgb(243, 42, 119);
+    text-align: center;
+    font-family: "Yusei Magic";
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#level>progress{
+    height: 40px;
+    width: 220px;
+}
+
+div:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 8px black;
+}
+
+.fa-id-card{
+    position: absolute;
+    top: -50px;
+    left: 44%;
+    font-size: 4em;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+div>a{
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+div>p{
+    margin-bottom: 50px;
+}
+
+
+/*omadli urinish*/
+#succes-alert{
+    background-color: #BCE2FC;
+    color: #002480;
+    margin-top: 9%;
+}
+
+#succes-alert>.button{
+    padding: 20px;
+    background-color: #002480;
+    color: #BCE2FC;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#succes-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px #002480;
+}
+
+#succes-alert>table{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#succes-alert>p{
+    margin-bottom: 18px;
+}
+
+#code{
+    cursor: pointer;
+    transition: 0.3s ease;
+    transition-property: box-shadow;
+}
+
+#code:hover{
+    box-shadow: 0 0 7px inset black;
+}
+
+/*Qayta urinish*/
+#warning-alert{
+    background-color:#F0F29B;
+    color:#a26307;
+}
+
+#warning-alert>.button{
+    padding: 20px;
+    background-color: #a26307;
+    color:  #F0F2CC;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#warning-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px #a26307;
+}
+
+/*Qayta urinish*/
+#red-alert{
+    background-color: #FCBCCA;
+    color: #A9092C;
+}
+
+#red-alert>.button{
+    padding: 20px;
+    background-color: #A9092C;
+    color:  #FCBCCA;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#red-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px #A9092C;
+}
+
+
+/*#### Responsive ####*/
+
+@media (max-width:710px) and (min-width:440px){
+    .fa-id-card{
+        left: 38%;
+        top: -40px;
+        height: 75px;
+        font-size: 3.5em;
+    }
+
+    div{
+        margin-top: 16%!important;
+        background-color: green;
+    }
+}
+
+@media (max-width:439px) and (min-width:350px){
+    .fa-id-card{
+        left: 38%;
+        top: -40px;
+        height: 75px;
+    }
+
+    div{
+        margin-top: 20%!important;
+        font-size: 1.45em!important;
+    }
+
+    #button{
+        font-size: 16pt!important;
+        padding: 15px!important;
+    }
+
+}
+
+    @media (max-width:349px) and (min-width:260px){
+        .fa-id-card{
+            left: 35%;
+            top: -40px;
+            height: 65px;
+            font-size: 3.3em;
+        }
+    
+        div{
+            margin-top: 20%!important;
+            font-size: 1.45em!important;
+        }
+    
+        #button{
+            font-size: 11pt!important;
+            padding: 15px!important;
+        }
+
+        div>table{
+            font-size: 12pt!important;
+        }
+
+    
+}

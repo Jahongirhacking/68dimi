@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post yaratish</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <i class="fa fa-circle" onclick="active()" aria-hidden="true" id="circle-hidden"></i>
+    <div class="container" id="container" style="display:none">
+    <nav><p>Post Yarating</p></nav>
+
+    <section id="main-form">
+        <form action="./php/" method="POST" autocomplete="off">
+            <input type="text" name="title" id="title" placeholder="Sarlavha">
+            <div class="row">
+                <div class="col">
+                    <img src="https://jobfriend.ru/wp-content/plugins/ht-mega-for-elementor//assets/images/image-placeholder.png" alt="Rasm">
+                    <input type="text" name="image" id="image" placeholder="Rasm manzili">
+                    <div>
+                        <input type="checkbox" onclick="document.getElementById('book').checked=false;" name="albom" id="albom" value="albom" checked>albom
+                        <input type="checkbox" onclick="document.getElementById('albom').checked=false;" name="book" id="book" value="book">book
+                    </div>
+                </div>
+                <textarea onkeyup="keyPressed(event);" name="text" id="text" placeholder="Asosiy Matn (HTML)"></textarea>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Ism Familiya Sinf">
+            <button type="submit" id="submit">OK</button>
+        </form>
+    </section>
+    </div>
+    <script>
+        var answer=document.getElementById("text");
+        var container=document.getElementById("container");
+        function keyPressed(event){
+            var x=event.key;
+            if(x=="\""){
+                let error=answer.value;
+                let err_arr=error.split("");
+                err_arr.pop();
+                let correct=err_arr.join("");
+                answer.value=correct;
+            }
+        }
+        
+        function active(){
+            container.style.display="block";
+            document.getElementById("circle-hidden").style.display="none";
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body{
+    font-size: 2.4em;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 3px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow!important;
+    border-radius: 50px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(38, 38, 38)!important;
+}
+
+div {
+    position: relative;
+    width: 865px;
+    margin: auto;
+    padding: 90px 50px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 17vh;
+}
+
+div>p{
+    width: 90%;
+    margin: auto;
+}
+
+i.fa:not(.in-button){
+    position: absolute;
+    font-size: 2.2em;
+    transition: 0.4s;
+    transition-property: transform, color;
+}
+
+i.fa:not(.in-button):hover{
+    transform: scale(1.2);
+}
+
+/*Android uchun*/
+i.fa-android{
+    top: -35px;
+    left: -20px;
+}
+
+i.fa-android:hover{
+    color: #A5C736;
+}
+
+/*Apple uchun*/
+i.fa-apple{
+    top: -35px;
+    right: -25px;
+}
+
+i.fa-apple:hover{
+    color: black;
+}
+
+/*Android uchun*/
+i.fa-windows{
+    bottom: -30px;
+    left: -25px;
+}
+
+i.fa-windows:hover{
+    color: #0083DC;
+}
+
+/*Linux uchun*/
+i.fa-linux{
+    bottom: -25px;
+    right: -20px;
+}
+
+i.fa-linux:hover{
+    color: black;
+}
+
+.button{
+    cursor:pointer;
+    transition: 0.6s ease;
+    transition-property: color, background-color, box-shadow;
+}
+
+/*##### Admin uchun kirish #######*/
+
+#admin-alert{
+    background-color: rgba(211, 252, 149, 0.734);
+    color: green;
+}
+
+#admin-alert>p{
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+#admin-alert>.button{
+    padding: 20px;
+    background-color: green;
+    color:  rgb(227, 253, 187);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#admin-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px green;
+}
+
+
+/*###### User uchun kirish ######*/
+
+#user-alert{
+    background-color: rgb(188, 226, 252);
+    color: rgb(0, 36, 128);
+}
+
+#user-alert>p{
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+#user-alert>.button{
+    padding: 20px;
+    background-color: rgb(0, 36, 128);
+    color:  rgb(188, 226, 252);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#user-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px  rgb(0, 36, 128);
+}
+
+
+/*###### Begona uchun kirish ######*/
+
+#none-alert{
+    background-color: rgb(252, 188, 202);
+    color: rgb(169, 9, 44);
+    padding: 54px 50px;
+    margin-top: 13vh;
+}
+
+#none-alert>p{
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 22pt;
+}
+
+#none-alert>.button{
+    padding: 20px;
+    background-color:rgb(148, 20, 20);
+    color: rgb(252, 188, 205);
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+#none-alert>.button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px  rgb(163, 19, 19);
+}
+
+/*font*/
+#xafa{
+    position: unset;
+    font-size: 0.9em;
+}
+
+
+
+/*Responsive*/
+
+@media (max-width:800px){
+    div{
+        width:400px;
+        margin-top:13vh;
+    }
+    
+    div>.button{
+        font-size:0.7em;
+    }
+}

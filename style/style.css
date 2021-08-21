@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    background-image: url("../images/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 3px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow!important;
+    border-radius: 50px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(38, 38, 38)!important;
+}
+
+#goto{
+    position:absolute;
+    top:10px;
+    left:20px;
+    color:white;
+    z-index:99;
+}
+
+#hide{
+    cursor:pointer;
+    padding:2px;
+    color: #ff3471;
+}
+
+#mehmon{
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    right: 0;
+    padding: 30px 12px;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    font-size: 3em;
+    margin-top:-54px;
+    color: #08217d;
+    cursor:pointer;
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+}
+
+#upper{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background: linear-gradient(#ffd700aa, transparent);
+}
+
+h1{
+    z-index: 10000;
+    position: relative;
+    color: aliceblue;
+    font-size: 2.5em;
+    margin-top: 4vh;
+}
+
+.container{
+    z-index: 9999;
+    width: 45%;
+    font-size: 22pt;
+    font-family: "Yusei Magic";
+    background-color:gold;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    position: relative;
+    border-radius: 10px;
+    padding: 95px 200px 110px;
+    transition: 0.4s ease;
+}
+
+.container:hover{
+    transform: scale(1.02);
+}
+
+.container>a>span{
+    position: absolute;
+    font-size: 2.5em;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: floralwhite;
+    padding: 5px 35px 17px;
+    border-radius: 100px;
+    top: -60px;
+    left: 45%;
+    transition: 0.3s ease;
+}
+
+.container>a>span:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px black;
+}
+
+.container>form>.row{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.container>form>.row>input{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 15pt;
+    padding: 3px;
+    background-color: goldenrod;
+    transition: 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.container>form>.row>input::placeholder{
+    color: rgba(0, 0, 0, 0.233);
+}
+
+#code{
+    width: 235px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 15pt;
+    padding: 3px;
+    transition: 0.4s ease;
+    border: none;
+    cursor: pointer;
+    
+    background-color: black;
+    color: rgb(255, 52, 113);
+    letter-spacing: 1.5px;
+}
+
+#code-row{
+    width: fit-content;
+    background-color: black;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.container>form>.row>input:hover{
+    box-shadow: 0 0 10px inset black;
+}
+
+input:focus{
+    outline: none;
+}
+
+.container>form>button{
+    float: right;
+    font-size: 15pt;
+    padding: 10px 50px;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: aliceblue;
+    transition: 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.container>form>button:focus{
+    outline: none;
+}
+
+.container>form>button:hover{
+    box-shadow: 0 0 10px black;
+    background-color: rgb(18, 14, 240);
+}
+
+#copyright{
+    position: fixed;
+    bottom: 0;
+    font-family: "Lobster";
+    letter-spacing: 1.2px;
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+    color: white;
+    padding: 10px;
+    z-index: 99999;
+    background: linear-gradient(transparent, #0099ffaa);
+}
+
+/*Responsive qismi*/
+@media (min-width:1980px){
+    .container{
+        width: 50%;
+        padding: 85px 200px 110px;
+    }
+
+    form{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:1066px) and (max-width:1421px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        padding: 85px 100px 110px;
+        width: 60%;
+    }
+}
+
+@media (min-width:910px) and (max-width:1065px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        padding: 85px 30px 110px;
+        width: 70%;
+    }
+
+
+    .container>a>span{
+        font-size: 2.3em;
+        padding: 3px 30px 12px;
+        top: -40px;
+    }
+}
+
+@media (min-width:700px) and (max-width:909px){
+    body{
+        overflow-x: hidden;
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+
+    .container{
+        width: 70%;
+        font-size: 15pt;
+        margin-top: 100px;
+        padding: 70px 30px 90px;
+        transition: 0.4s ease;
+    }
+    .container>a>span{
+        position: absolute;
+        font-size: 2em;
+        padding: 5px 23px 12px;
+        top: -40px;
+    }
+
+    .container>form>.row>input{
+        width: 250px;
+        font-size: 12pt;
+        height: 45px;
+    }
+    
+    #code-row>input{
+        width: 200px;
+        font-size: 12pt;
+        height: 45px;
+    }
+
+    .container>form>button{
+        font-size: 13pt;
+        padding: 6px 30px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (min-width:400px) and (max-width:699px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    #mehmon{
+        padding: 23px 12px;
+        font-size:2.1em;
+    }
+
+
+    h1{
+        font-size: 1.6em;
+    }
+    .container{
+        width: 70%;
+        font-size: 15pt;
+        margin-top: 60px;
+        padding: 50px 30px 70px;
+        transition: 0.4s ease;
+    }
+
+    .container>a>span{
+        left: 40%;
+        position: absolute;
+        font-size: 2em;
+        padding: 5px 23px 12px;
+        top: -40px;
+    }
+
+    .container>form>.row{
+        display: block;
+    }
+
+    .container>form>.row>label{
+        display: block;
+    }
+
+    .container>form>.row>input{
+        width: 250px;
+        font-size: 12pt;
+        height: 40px;
+    }
+    
+    #code-row>input{
+        width: 223px;
+        font-size: 12pt;
+        height: 40px;
+    }
+
+    .container>form>button{
+        font-size: 13pt;
+        padding: 10px 30px;
+        margin-top: 30px;
+        float: none;
+    }
+    
+    #copyright{
+        font-size: 11pt;
+    }
+    
+    #code-row{
+        margin:auto;
+    }
+
+}
+
+@media (min-width:280px) and (max-width:399px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    #mehmon{
+        padding: 20px 12px;
+        font-size:1.9em;
+    }
+
+
+    h1{
+        font-size: 1.1em;
+    }
+    .container{
+        width: 70%;
+        font-size: 15pt;
+        margin-top: 60px;
+        padding: 50px 30px 70px;
+        transition: 0.4s ease;
+    }
+    .container>a>span{
+        left: 40%;
+        position: absolute;
+        font-size: 1.5em;
+        padding: 5px 19px 12px;
+        top: -30px;
+    }
+
+    .container>form>.row{
+        display: block;
+    }
+
+    .container>form>.row>label{
+        display: block;
+        font-size: 13pt;
+    }
+
+    .container>form>.row>input{
+        width: 190px;
+        font-size:11pt;
+        height: 40px;
+    }
+    
+    #code-row>input{
+        width: 162px;
+        font-size:11pt;
+        height: 40px;
+    }
+    
+    #code-row{
+        margin:auto;
+    }
+
+    .container>form>button{
+        font-size: 13pt;
+        padding: 10px 30px;
+        margin-top: 30px;
+        float: none;
+    }
+    
+    #copyright{
+        font-size: 9pt;
+    }
+
+}

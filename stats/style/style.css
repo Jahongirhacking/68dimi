@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #303956;
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+    padding: 12px 0px;
+    font-family:"Yusei Magic";
+    z-index: 999;
+}
+
+body{
+    background-image:url("../../images/stats.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.container{
+    background-color: #31536d;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Yusei Magic';
+    border-radius: 15px;
+    margin-top: 90px;
+    width: fit-content;
+    position: relative;
+}
+
+.container>h1{
+    color:wheat;
+    margin: 0;
+    padding: 0;
+}
+
+.card>h1{
+    margin: auto;
+}
+
+.container>div{
+    color: #303956
+}
+
+.container>div>div:nth-child(2){
+    top: 100px;
+    font-size: 18pt;
+    font-family: 'Yusei Magic';
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 650px;
+}
+
+.container>div>div>progress{
+    height: 52px;
+}
+
+.card{
+    background-color:#9ccad0;
+    border-radius: 10px;
+    color: #303956;
+    padding: 40px 25px;
+    margin: 35px;
+}
+
+#jami{
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    color: gold;
+}
+
+.leader{
+    color: #0e7345;
+    font-size: 17pt;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#quit{
+    padding: 8px 20px 13px 0px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-radius: 0 0 90px;
+    text-align: center;
+    cursor:pointer;
+}
+
+#quit>p{
+    margin:5px;
+    font-family: "Yusei Magic";
+}

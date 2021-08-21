@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="G'uzor tumani 68-sonli davlat ixtisoslashtirilgan maktab internatining rasmiy sayti">
+    <meta name="keywords" content="68dimi, Jahongirhacking, Jahongir Hayitov, maktab sayti, G'uzor, Qashqadaryo, ixtisoslashtirilgan maktab, atwebpages">
+    <meta name="author" content="Jahongir Hayitov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Exn8PT5SF9D-HjeECdIYgeljal62jcHlc1ivzYF5sYE" />
+    <title>Forma blankasi</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/kuz.png">
+
+</head>
+<body>
+    <a href="./sign_in/" id="goto">Kabinetga o'tish</a>
+    <i onclick="mehmon('./sign_in/php/mehmon.php','./users/')" id="mehmon" class="fa fa-suitcase" aria-hidden="true"></i>
+    <div class="shadow"></div>
+    <div id="upper"></div>
+    <h1>&lt; Ma'lumotlaringizni Kiriting / &gt;</h1>
+    <div class="container">
+        <a href="./sign_in/"><span><i class="fa fa-user" aria-hidden="true"></i></span></a>
+        <form autocomplete="off" action="./php/index.php" method="POST">
+            <div class="row">
+                <label>Ismingiz:</label>
+                <input type="text" name="firstname" id="firstname" onkeyup="keyPressed(event,'firstname');" required>
+            </div>
+            <div class="row">
+                <label>Familiyangiz:</label>
+                <input type="text" name="lastname" id="lastname" onkeyup="keyPressed(event,'lastname');" required>
+            </div>
+            <div class="row">
+                <label>Tug'ilgan sanangiz:</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <!-- <div class="row">
+                <label>Telefon raqamingiz:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Ex.: 998901234567" onkeyup="keyPressed(event,'phone');" required>
+            </div> -->
+            <div class="row">
+                <label>Maktabingiz:</label>
+                <input type="text" name="school" id="school" placeholder="Ex.: 68-DIMI" onkeyup="keyPressed(event,'school');" required>
+            </div>
+            <div class="row">
+                <label>Sinfingiz:</label>
+                <input type="text" name="class" id="class" placeholder="Ex.: 10-E" onkeyup="keyPressed(event,'class');" required>
+            </div>
+            <div class="row">
+                <label>Kirish uchun kalit so'z:</label>
+                <input type="text" name="login" id="login" placeholder="Eslab qoling!" onkeyup="keyPressed(event,'login');" required minlength="7">
+            </div>
+            <div class="row">
+                <label>Kodni eslab qoling:</label>
+                <div id="code-row"><input type="text" name="code" id="code" onkeyup="keyPressed(event,'code');" minlength="5" required> <span id="hide" onclick="hide();"><i class="fa fa-eye-slash" aria-hidden="true"></i></span></div>
+            </div>
+            <button type="submit">Jo'natish <i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
+        </form>
+    </div>
+    <footer id="copyright">
+        &copy; Copyright 2021-<script>document.write(new Date().getFullYear())</script> Jahongir Hayitov
+    </footer>
+    
+    
+    <script>
+function keyPressed(event,id){
+            var x=event.key;
+            if(x=="\""){    
+                var answer=document.getElementById(id);
+                let error=answer.value;
+                let err_arr=error.split("");
+                err_arr.pop();
+                let correct=err_arr.join("");
+                answer.value=correct;
+            }
+        }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./script/app.js"></script>
+<script src="./sign_in/script/app.js"></script>
+</body>
+
+
+</html>

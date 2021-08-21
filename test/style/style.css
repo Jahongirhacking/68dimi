@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+body{
+    margin: auto;
+    background-color: #ddd;
+}
+
+nav{
+    background-color: #303956;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-family: "Yusei Magic";
+}
+
+.container{
+    margin-top: 110px;
+}
+
+#left-time{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #303956;
+    color: rgb(240 248 255);
+    font-size: 17pt;
+    font-weight: bold;
+    border-radius: 13px 0 0;
+}
+
+
+
+#container{
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 45px;
+    padding-top: 90px;
+    margin-top: 24vh;
+    border-radius: 17px;
+    position:relative;
+}
+
+#container>.fa-gift{
+    position: absolute;
+    left: 42%;
+    top: -61px;
+    font-size: 8em;
+    color: #303956;
+}
+
+#container>p{
+    font-size:1.5em;
+}
+
+.container>.card{
+    background-color: aliceblue;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+    font-family: calibri;
+}
+
+.card>.card-nav{
+    text-align: center;
+    background-color: #4c6eac;
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.card>.card-test{
+    font-size: 15pt;
+    padding: 10px 10px 20px;
+}
+
+.card-test>p>img{
+    width: 505px;
+    margin-left: 35px;
+}
+
+#answer,#kabinet{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#answer:hover, #kabinet:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+}
+
+#answer:focus{
+    outline: none;
+}
+
+#answer{
+    background-color: green;
+    color: white;
+}
+
+#kabinet{
+    background-color: #303956;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+
+form>input{
+    display:none;
+    position:absolute;
+    left:-300px;
+}
+
+
+.gold{
+    color:gold;
+}
+
+/*Xatolik uchun*/
+
+.wrong-container{
+    font-family:"Yusei Magic";
+    font-size:1.5em;
+    width:fit-content;
+    margin:auto;
+    text-align:center;
+    background-color:#ff9fb3;
+    padding:60px;
+    margin-top:22vh;
+    position:relative;
+}
+
+.wrong-container>a{
+    text-decoration:none;
+    color:white;
+    background-color: #981515;
+    border-radius: 22px;
+    padding: 10px 25px;
+}
+
+.wrong-container>.fa-recycle{
+    position: absolute;
+    left: 42%;
+    top: -60px;
+    font-size: 5em;
+    color: #981515;
+}
+
+/*Yashirish*/
+
+input[type="checkbox"]{
+    cursor:pointer;
+}
+
+@media (max-width:530px){
+    .wrong-container{
+        width:350px;
+    }
+
+    .wrong-container>a{
+        font-size:18pt;
+    }
+    
+    .wrong-container>.fa-recycle{
+        left:35%;
+    }
+    
+    #container>.fa-gift{
+        left:33%;
+    }
+    
+}

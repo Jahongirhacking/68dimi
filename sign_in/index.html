@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish Qismi</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../images/kuz.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <a href="../" id="goto">Ro'yxatdan o'tish</a>
+    <i onclick="mehmon('./php/mehmon.php','../users/')" id="mehmon" class="fa fa-suitcase" aria-hidden="true"></i>
+    <div class="shadow"></div>
+    <div id="upper"></div>
+    <h1>&lt; Shaxsiy Kabenitga O'tish / &gt;</h1>
+    <div class="container">
+        <a href="../"><span><i class="fa fa-user" aria-hidden="true"></i></span></a>
+        <form autocomplete="off" action="./php/" method="POST">
+            <div class="row">
+                <label>Kalit so'z (Login):</label>
+                <input type="text" name="login" id="login" placeholder="Kalit so'z" minlength="7"  required>
+            </div>
+            <div class="row">
+                <label>Parolingiz:</label>
+                <div id="code-row"><input type="password" name="code" id="code" required> <span id="hide" onclick="hide();"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+            </div>
+            <button type="submit">Jo'natish <i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
+        </form>
+    </div>
+    <footer id="copyright">
+        &copy; Copyright 2021-<script>document.write(new Date().getFullYear())</script> Jahongir Hayitov
+    </footer>
+    <script src="./script/app.js"></script>
+</body>
+</html>

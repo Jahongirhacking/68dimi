@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body{
+    margin: auto;
+    background-color: #e4e4e4;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    color: #eeeeee;
+    font-family: "Yusei Magic";
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    background-color: #303956;
+}
+
+nav>p{
+    margin: 8px auto;
+}
+
+#main-form{
+    padding-top: 130px;
+    height: 100%;
+}
+
+#main-form>form{
+    background-color: rgb(104, 200, 245);
+    width: 950px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+
+#main-form>form>div>div>img{
+    width: 220px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.row>.col{
+    display: grid;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#text{
+    width: 600px;
+    height: 300px;
+}
+
+#image{
+    margin: 10px;
+    padding: 7px;
+}
+
+#title{
+    width: 934px;
+    padding: 12px 8px 12px;
+    border-radius: 20px 20px 0 0;
+    border-color: white;
+    background-color: #303956;
+    color: #eee;
+    font-size: 14pt;
+}
+
+#name{
+    width: 250px;
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+}
+
+button#submit{
+    background-color: #303956;
+    color: yellow;
+    padding: 11px 8px;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 30px;
+    position: absolute;
+    top: 195px;
+    left: 110px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transition-property: transform;
+    z-index: 999;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+}
+
+input,textarea{
+    border: 1px dashed #303956;
+    text-align: center;
+    padding: 8px;
+}
+
+input,textarea,#submit:focus{
+    outline: none;
+}
+
+.fa-circle{
+    color:#303956;
+    position:absolute;
+    font-size: 8px!important;
+    bottom: 0px;
+    right: 0px;
+    padding: 30px;
+}

@@ -1,0 +1,529 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-color: #e4e4e4;
+    margin: auto;
+    color: #606060;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 4px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #39e8c7!important;
+    border-radius: 50px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(38, 38, 38)!important;
+}
+
+#bula{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border-radius: 50px;
+    width: 70px;
+    transform: rotate(-30deg);
+    z-index: 99999;
+    transition: 0.5s ease;
+}
+
+#stats{
+    position: fixed;
+    bottom: 185px;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+    background-color: white;
+    padding: 10px;
+    color: #31536d;
+    font-size: 30pt;
+    z-index:99999;
+}
+
+.greenCircle{
+    background-color: #51c751;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+}
+
+.redCircle{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+}
+
+.orangeCircle{
+    background-color: #ff9900;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+}
+
+a>img#coders{
+    width: 85px;
+}
+
+.coders{
+    position: fixed;
+    bottom:7px;
+    right:0px;
+    padding:5px;
+    background-color: white;
+    border-radius: 7px 0 0 7px;
+    z-index: 99999;
+}
+
+sup{
+    background-color: red;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 11pt;
+}
+
+/*Ob-havo*/
+
+#weather{
+    position:fixed;
+    right:0;
+    bottom:90px;
+    padding:5px;
+    background-color:white;
+    display:grid;
+    text-align:center;
+    border-radius:8px 0 0 8px;
+    z-index: 99999;
+}
+
+#weather-img{
+    width:55px;
+    border-radius:8px;
+}
+
+#degree{
+    font-weight:bold;
+    font-family:"Yusei Magic";
+}
+
+
+
+#bula:hover{
+    transform: rotate(30deg);
+}
+
+.container{
+    position: relative;
+    margin: 0;
+}
+
+#kuzmunchoq{
+    width:35px;
+    margin-left:5px;
+}
+
+nav{
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    background-color:#303956;
+    color: #eee;
+    margin: 0;
+    padding: 20px 30px;
+    align-items: center;
+    width: 100%;
+}
+
+nav>*{
+    cursor: pointer;
+}
+
+nav>.fa-trophy{
+    background-color: #eee;
+    padding: 10px;
+    color: #303956;
+    border-radius: 10px;
+    font-size: 20pt;
+    transition: 0.4s ease;
+}
+
+nav>.fa-trophy:hover{
+    transform: scale(1.1);
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    font-family: "Yusei Magic";
+}
+
+nav>.header>#nav-logo{
+    font-size: 22pt;
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Yusei Magic";
+}
+
+#beta{
+    font-size: 11pt;
+}
+
+nav>.header>#nav-logo>span{
+    padding-left: 5px;
+    color: #eee;
+}
+
+
+#nav-tools{
+    align-items:center;
+    display: flex;
+}
+
+nav>.header>#nav-tools>.fa-user{
+    padding: 8px 10px;
+    margin-left: 10px;
+    background-color: #129b5b;
+    border-radius: 50px;
+}
+
+
+
+/* Menu */
+
+#leaderboard{
+    z-index: 7777;
+    margin: 85px 0;
+    padding: 0 10px;
+    position: fixed;
+    background-color: #303956;
+    color: #eee;
+    height: 86%;
+    overflow-y: scroll;
+    left: -470px;
+    transition: 1s ease;
+}
+
+#leader-shadow{
+    height:100%;
+    background-color:#303956;
+    position:fixed;
+    left:0;
+    top:100px;
+    z-index:1;
+    left: -470px;
+    transition: 1s ease;
+}
+
+#leaderboard>p{
+    margin: auto;
+    text-align: center;
+    font-family: "Yusei Magic";
+    font-weight: bold;
+    color: #303956;
+    background-color: #eee;
+    font-size: 15pt;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    padding: 8px 0;
+}
+
+.table-row{
+    box-shadow: 0 0 2px inset rgb(3, 8, 28);
+}
+
+.table-head{
+    box-shadow: 0 0 3px inset rgb(255, 255, 255);
+}
+
+#leaderboard>table{
+    text-align: center;
+    font-family: calibri;
+}
+
+
+#lead{
+    transition: 0.4s ease;
+}
+
+
+#trophy{
+    background-color: #303956;
+    padding: 3px 8px;
+    border-radius: 50px;
+}
+
+td>div{
+    margin:auto;
+    padding:0;
+}
+
+td>div>i.fa-telegram{
+    color:#2da5d9;
+    background-color:#eee;
+    border-radius:50px;
+    padding:2px;
+    cursor:pointer;
+    position:relative;
+}
+
+
+/*########### Main Videos ########*/
+
+#main-data{
+    position: absolute;
+    left: 88px;
+    top: 75px;
+    padding:20px 20px 60px 300px;
+}
+
+
+
+#main-data>.card{
+    position: relative;
+    width: 900px;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 20px 5px 50px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    padding-bottom: 60px;
+    transition: 0.4s ease;
+}
+
+#main-data>.card:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.card>h1{
+    background-color: #303956;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    color: #eee;
+}
+
+#main-data>.card>div>img.book{
+    width: 235px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#main-data>.card>div>img.albom{
+    width: 270px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+#main-data>.card>div{
+    display: flex;
+    align-items: center;
+}
+
+#main-data>.card>div>p{
+    margin: auto;
+    font-size: 14pt;
+    color: #303956;
+    padding: 5px 15px;
+}
+
+
+.post-admin{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 10pt!important;
+    width: fit-content;
+}
+
+.post-text{
+    width: 530px;
+    line-height: 25px;
+}
+
+
+
+/*########### Footer ########*/
+
+footer{
+    z-index: 8888;
+    color: black;
+    text-align: center;
+    width: 303px;
+    position: fixed;
+    bottom: 0px;
+    background:#e4e4e4;
+    align-items: center;
+}
+
+footer>p{
+    font-size: 12pt;
+    margin: auto;
+}
+
+
+/*########### Ranglar ########*/
+
+.red{
+    color: #FF0000;
+}
+
+.black{
+    color: #000;
+}
+
+.gold{
+    color: gold;
+}
+
+.blue{
+    color: #0083DC;
+    font-size: 11pt;
+}
+
+.green{
+    color:green;
+}
+
+#tr1{
+    background-color: gold;
+    color: #303956;
+    font-weight: bold;
+}
+
+#tr2{
+    background-color:silver;
+    color: #303956;
+    font-weight: bold;
+}
+
+#tr3{
+    background-color: #cd7f32;
+    color: #eee;
+    font-weight: bold;
+}
+
+
+/*Responsive*/
+
+@media (min-width:1600px){
+    #main-data{
+        padding: 20px 20px 60px 500px;
+    }
+}
+
+
+
+
+
+/*To'g'ridan to'g'ri kirish xatoligi*/
+
+.direct-error{
+    background-color:rgb(252, 188, 202);
+    width:800px;
+    font-size:1.7em;
+    text-align:center;
+    margin:auto;
+    margin-top:155px;
+    padding:100px 50px 50px;
+    font-family: 'Yusei Magic';
+    border-radius:10px;
+    position:relative;
+    color:black;
+}
+
+.fa-map-signs{
+    padding: 18px;
+    border: 3px solid white;
+    border-radius: 100px;
+    color: #eee;
+    background-color: #a9092c;
+    position: absolute;
+    top: -65px;
+    left: 375px;
+    font-size: 4em;
+}
+
+.direct-button{
+    background-color:rgb(169, 9, 44);
+    color:white;
+    padding:10px 40px;
+    margin:auto;
+    margin:15px auto;
+    width:fit-content;
+    text-decoration:none;
+    display:block;
+    border-radius:30px;
+}
+
+.offline-white{
+    text-shadow: 0 0 8px black;
+    color:white;
+    font-size: 8pt;
+}
+
+.online-green{
+    text-shadow: 0 0 8px black;
+    color:#51c751;
+    font-size: 10pt;
+    animation: online-scale 1s infinite;
+}
+
+/*Mehmon chiqishi uchun knopka*/
+.mehmon-chiqish{
+    position: fixed;
+    background-color: #eee;
+    top: 0;
+    z-index: 99999;
+    padding: 6px 27px;
+    font-size: 3em;
+    left: 50%;
+    margin-left: -30px;
+    border-radius: 0 0 40px 40px;
+    color: #000;
+}
+
+
+
+/*Animate Online*/
+
+@keyframes online-scale {
+  from {transform:scale(0.9);}
+  to {transform:scale(1.3);}
+}
+
+@keyframes button-green-animate {
+  0%   {background-color:#0d0;}
+  50%  {background-color:#090;}
+  100%  {background-color:#0d0;}
+}
+
+@keyframes button-orange-animate {
+  0%   {background-color:#e6a40f;}
+  50%  {background-color:red;}
+  100%  {background-color:#e6a40f;}
+}

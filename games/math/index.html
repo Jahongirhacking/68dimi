@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik O'yin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style/own.css">
+</head>
+<body onload="loadGame()">
+    <nav id="nav"><i class="fas fa-anchor"></i> Math Battle <i class="fas fa-square-root-alt"></i></nav>
+
+    <a href="../../users/" class="kabinetga"><i class="fas fa-hand-point-left"></i>Kabinetga</a>
+
+    <div class="container">
+        <progress id="vaqt" max="300" value="300"></progress>
+        <div class="main-game doska" id="doska"><span id="misol-amal">230 x 18</span><span id="misol-natija"> = 3120</span></div>
+        <div class="true-or-false">
+            <i id="true-button" class="far fa-check-circle" aria-hidden="true"></i>
+            <i id="false-button" class="far fa-times-circle" aria-hidden="true"></i>
+        </div>
+        <div class="scores">
+            <span id="scoreSimple">0</span>
+            <i class="fas fa-chevron-circle-right"></i>
+            <span id="scoreXP">0 XP</span>
+        </div>
+        
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./script/app.js"></script>
+</body>
+</html>

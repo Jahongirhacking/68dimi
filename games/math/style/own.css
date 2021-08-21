@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@keyframes tepadanTush{
+    from{
+        transform: translateY(-80px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes shishmoq{
+    0%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+
+nav{
+    text-align: center;
+    font-weight: bold;
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 30pt;
+    padding: 15px 0;
+    z-index: 3;
+    animation: tepadanTush 2s;
+    font-family: 'Fredoka One', cursive;
+}
+
+.kabinetga{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    padding: 16px 38px 22px 13px;
+    background-color: white;
+    color: teal;
+    z-index: 4;
+    border-radius: 0 0 90px;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    box-shadow: 0 0 10px black;
+}
+
+.kabinetga>i{
+    display: block;
+}
+
+/*Vaqt*/
+#vaqt{
+    height: 55px;
+    width: 50%;
+}
+
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*Random Hisoblash chiqadigan Joy (Main-Game)*/
+.main-game{
+    background-color: rgb(5, 79, 79);
+    color: white;
+    width: fit-content;
+    font-size: 4em;
+    font-family: calibri;
+    padding: 45px 45px;
+    margin: 30px auto;
+    border-radius: 20px;
+    border: 10px inset rgb(202, 80, 36);
+    box-shadow: 0 0 8px inset black;
+    font-family: 'Fredoka One', cursive;
+}
+
+/*To'g'ri yoki noto'g'ri uchun knopka*/
+
+.true-or-false{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.true-or-false>.far{
+    display: block;
+    font-size: 4em;
+    color: white;
+    padding: 30px;
+    border-radius: 100px;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.4s ease;
+    transition-property: transform;
+    animation: shishmoq 2s;
+}
+
+.true-or-false>.far:hover{
+    transform: scale(1.1);
+}
+
+.fa-check-circle{
+    background-color: rgb(12, 135, 135);
+}
+
+.fa-times-circle{
+    background-color: rgb(189, 18, 18);
+}
+
+/*Scores style*/
+.scores{
+    border: 2px solid black;
+    width: 40%;
+    background-color: rgb(29, 29, 29);
+    color: rgb(240, 27, 102);
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 24pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.scores>*{
+    display: block;
+}
+
+/*Responsive Qism*/
+@media (max-width:600px){
+    .kabinetga{
+        font-size: 13pt;
+        padding: 18px 27px 20px 9px;
+    }
+
+    .doska{
+        font-size: 3em;
+    }
+
+    #vaqt{
+        width: 70%;
+    }
+
+    .true-or-false{
+        width: 100%;
+    }
+
+    .scores{
+        width: 60%;
+    }
+
+    nav{
+        font-size: 2em;
+    }
+}

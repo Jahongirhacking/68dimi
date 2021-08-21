@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background-color: rgb(26, 26, 26);
+}
+
+table{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    font-family: calibri;
+}
+
+#sad{
+    font-size: 14em;
+    position: absolute;
+    color: rgb(216, 209, 16);
+    top: 28%;
+    left: 42%;
+}
+
+#post{
+    background-color: midnightblue;
+}
+
+#post>td>a{
+    color: midnightblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#post>td>a>p{
+    margin: auto;
+    padding: 5px;
+    background-color: #eee;
+    width: 50%;
+    border-radius: 17px;
+}
+
+th{
+    background-color: rgb(153, 185, 245);
+}
+
+.ha{
+    background-color: greenyellow;
+}
+
+.yoq{
+   background-color: yellow; 
+}
+
+.bg-blue{
+    background-color: #99B9F5;
+    font-weight: bold;
+}
+
+.bg-black{
+    background-color: rgb(91, 91, 91);
+}
+
+.ha, .yoq{
+    transition: 0.4s ease;
+}
+
+.ha:hover, .yoq:hover{
+    box-shadow: 0 0 10px inset;
+}
