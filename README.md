@@ -9,4 +9,4 @@
 
 ----- BulaGram -----
 
-![bulagram](https://user-images.githubusercontent.com/66916141/140644012-ecdf9646-b488-4877-955a-398b00dc9a44.JPG)
+![BulaGram](https://user-images.githubusercontent.com/66916141/140644094-1846fc92-9b62-4580-8f63-649483f67f35.png)
