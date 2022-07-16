@@ -31,7 +31,7 @@
 
     $dbServerName="fdb30.awardspace.net";
     $dbUserName="3717817_jahongirhacking";
-    $dbPassword="Jahongir18052004";
+    $dbPassword="Jahongir";
     $dbName="3717817_jahongirhacking";
     
     $conn=new mysqli($dbServerName,$dbUserName,$dbPassword,$dbName) or die("Ulanib bo'lmadi!");
