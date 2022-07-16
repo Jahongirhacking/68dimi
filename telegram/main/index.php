@@ -49,7 +49,7 @@ if($_SESSION["isMehmon"]==0 && isset($_SESSION["isMehmon"])){
 
         $dbServerName="fdb30.awardspace.net";
         $dbUserName="3717817_jahongirhacking";
-        $dbPassword="Jahongir18052004";
+        $dbPassword="Jahongir";
         $dbName="3717817_jahongirhacking";
         
         //1-ma'lumotlar ba'zasi bilan bog'la Bunda User ma'lumotlari    
